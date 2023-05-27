@@ -1,4 +1,4 @@
-# LegacyNeuralNetworks
+# Legacy Neural Networks
 
 ```
 !pip install LegacyNeuralNetworks==0.0.1
