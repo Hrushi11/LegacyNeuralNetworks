@@ -1,7 +1,7 @@
 # Legacy Neural Networks
 
 ```
-!pip install LegacyNeuralNetworks==0.0.1
+!pip install LegacyNeuralNetworks
 ```
 
 ![IMG](https://github.com/Hrushi11/LegacyNeuralNetworks/blob/main/assets/code.png?raw=true)
