@@ -2,6 +2,13 @@ import os
 
 # String holders for code
 activation_function = """
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class ActivationFunction:
     def __init__(self, function_name, grid=False):
         self.function_name = function_name
@@ -79,6 +86,13 @@ activation_func.plot()
 """
 
 mcculloh_pitt = """
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class McCullochPittsNeuron:
     def __init__(self):
         pass
@@ -101,6 +115,13 @@ output = neuron.andnot(x1, x2, weights)
 """
 
 ascii_perceptron = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class Perceptron:
     def __init__(self, input_size):
         self.weights = np.random.rand(input_size)
@@ -154,6 +175,13 @@ for number, prediction in zip(X_test, predictions):
 """
 
 descision_region_perceptron = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class PerceptronPlotter:
     def __init__(self, random_seed=42):
         self.random_seed = random_seed
@@ -191,6 +219,13 @@ plotter.run()
 """
 
 recognize_5x3_matrix = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class PerceptronNN:
     def __init__(self, nn=10):
         self.nn = nn
@@ -239,6 +274,13 @@ print(predictions)
 """
 
 ann_forward_backward = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class NeuralNetwork:
     def __init__(self, input_size, hidden_size, output_size):
         self.input_size = input_size
@@ -348,6 +390,13 @@ print(predictions)
 """
 
 xor_backprop = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class BackpropagationXOR:
     def __init__(self):
         # Initialize weights and biases
@@ -454,6 +503,13 @@ predictions
 """
 
 art_network = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class ARTNeuralNetwork:
     def __init__(self, num_features, max_categories=100, rho=0.5, beta=1.0):
         self.num_features = num_features
@@ -516,6 +572,13 @@ print(f"Predicted categories: {predictions}")
 """
 
 hopfield_network = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class HopfieldNetwork:
     def __init__(self, num_neurons):
         self.num_neurons = num_neurons
@@ -558,6 +621,13 @@ print(f"Recalled output: {recalled_vector.tolist()}")
 """
 
 cnn_object_detection = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class CNNObjectDetection:
     def __init__(self, num_classes=10, filters=32, kernel=(3, 3), dense_nodes=64):
         self.filters = filters
@@ -639,6 +709,13 @@ cnn.run(X_train, y_train,
 """
 
 cnn_image_classification = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class CNNObjectDetection:
     def __init__(self, num_classes=10, filters=32, kernel=(3, 3), dense_nodes=64):
         self.filters = filters
@@ -721,6 +798,13 @@ cnn.run(X_train, y_train,
 """
 
 cnn_tf_implementation = """
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class CNNModel:
     def __init__(self, num_classes):
         self.num_classes = num_classes
@@ -763,6 +847,13 @@ predictions = cnn_model.predict(X_test)
 """
 
 mnist_detection = """ 
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import make_classification
+from sklearn.neural_network import MLPClassifier
+
 class MNISTClassifier:
     def __init__(self):
         self.model = self.build_model()
