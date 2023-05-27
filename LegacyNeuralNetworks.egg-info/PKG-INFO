@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: LegacyNeuralNetworks
+Version: 0.0.1
+Summary: Legacy Neural Networks
+Home-page: UNKNOWN
+Author: Hrushikesh Kachgunde
+Author-email: <hrushiskachgunde@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,neural networks,ann,mcculloh-pitt,ART neural network
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
