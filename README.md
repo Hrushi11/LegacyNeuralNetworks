@@ -2,6 +2,10 @@
 
 The Legacy Neural Networks Library is a powerful tool designed to facilitate the development and implementation of neural networks using traditional or legacy approaches. This library provides a comprehensive set of features and functionalities to support the exploration, training, and evaluation of neural network models from earlier generations.
 
+```
+!pip install LegacyNeuralNetworks
+```
+
 ## Key Features
 
 - **Legacy Network Architectures:** The library offers a variety of legacy neural network architectures, including classic feedforward networks, recurrent neural networks (RNNs), convolutional neural networks (CNNs), and more. These architectures serve as the foundation for building and experimenting with neural models based on traditional methodologies.
