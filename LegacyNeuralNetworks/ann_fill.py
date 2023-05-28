@@ -37,19 +37,27 @@ ascii_perceptron_3 = """
 #ann 03 --> Write a Python Program using Perceptron Neural Network to recognise even and odd numbers. Given numbers are in ASCII form 0 to 9
 from sklearn.linear_model import Perceptron
 import numpy as np
-# Training data      0    1      2     3    4      5     6      7    8      9
-X_train = np.array([[48], [49], [50], [51], [52], [53], [54], [55], [56], [57]])  # ASCII values of digits 0 to 9
-y_train = np.array([0   ,    1,    0,     1,    0,    1,    0,    1,   0,    1])  # Even (0) or odd (1)
-perceptron = Perceptron()
-perceptron.fit(X_train % 2, y_train)  
-X_test = np.array([[50], [53], [57]])  # ASCII values of digits 2, 5, and 8
-y_pred = perceptron.predict(X_test % 2)
-for i, val in enumerate(y_pred):
-    digit = chr(X_test[i][0]) # chr character value
-    if val == 0:
-        print(f"The number {digit} is even.")
-    else:
-        print(f"The number {digit} is odd.")
+X = np.array([ [48, 49, 50, 51, 52, 53, 54, 55, 56, 57],
+ [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+])
+w = np.zeros(X.shape[0])
+b = 0
+def activation(z):
+ return 1 if z >= 0 else 0
+for epoch in range(1000):
+ for x, y in zip(X[0], X[1]):
+ z = np.dot(w, X[:, x-48]) + b
+ y_hat = activation(z)
+ error = y - y_hat
+ w += error * X[:, x-48]
+ b += error
+while True:
+ x = input("Enter a number between 0 and 9: ")
+ if not x.isdigit() or int(x) < 0 or int(x) > 9:
+ print("Invalid input!")
+ z = np.dot(w, X[:, int(x)]) + b
+ y_hat = activation(z)
+ print("(Number is Even" if y_hat == 0 else "Number is Odd")
 """
 descision_region_perceptron_4 = """ 
 #ann 6/4-->Implement perceptron learning law with its decision regions using python. Give the output in graphical form 
